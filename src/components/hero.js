@@ -8,7 +8,6 @@ function Hero(props) {
             <Container fluid={true}>
                 <Row className="justify-content-center py-2">
                     <Col md={8} sm={12}>
-                        {props.title && <h2 className="display-2 font-weight-bolder">{props.title}</h2>} 
                         {props.subtitle && <h3 className="display-4 font-weight-light">{props.subtitle}</h3>}
                         {props.text && <h3 className="lead font-weight-light">{props.text}</h3>}
                     </Col>
