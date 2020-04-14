@@ -23,7 +23,7 @@ class Carousel extends React.Component {
                     title: 'Movie Rockers',
                     subTitle: 'A movie recommendation system.',
                     imgSrc: movie_rockerz,
-                    link: '#',
+                    link: 'https://github.com/tanveer3567/Movie-Rockerz',
                     selected: false
                 },
                 {
@@ -72,19 +72,25 @@ class Carousel extends React.Component {
 
     handleCardOver = (id, card) => {
         let items = [...this.state.items]
-        items[id].selected = items[id].selected ? false : true;
+        items[id].selected = true;
+        items.map(item => {
+            if (item.id !== id) {
+                item.selected = false
+            }
+            return null;
+        })
         this.setState({
             items
         });
     }
 
-    handleCardLeave = (id, card) => {
-        let items = [...this.state.items]
-        items[id].selected = items[id].selected ? false : true;
-        this.setState({
-            items
-        });
-    }
+    // handleCardLeave = (id, card) => {
+    //     let items = [...this.state.items]
+    //     items[id].selected = items[id].selected ? false : true;
+    //     this.setState({
+    //         items
+    //     });
+    // }
 
 
     makeItems = (items) => {
@@ -97,8 +103,8 @@ class Carousel extends React.Component {
             } 
             return (
                 <Col className="p-4" key={item.id}>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={item.imgSrc}  onMouseOver={(e => this.handleCardOver(item.id, e))} onMouseLeave={(e => this.handleCardLeave(item.id, e))}/>
+                    <Card style={{ width: '18rem' }} onMouseOver={(e => this.handleCardOver(item.id, e))} >
+                        <Card.Img variant="top" src={item.imgSrc}/>
                         <Card.Body>
                             <Card.Title>{item.title}</Card.Title>
                             <Card.Text>{text}</Card.Text>

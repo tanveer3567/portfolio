@@ -16,10 +16,10 @@ function HomePage(props) {
                     <Col md="auto">
                         <ExampleComponent image={my_photo} roundedSize="0" imageWidth="350" imageHeight="350"/>
                         <br />
-                        <SocialIcon url="http://twitter.com" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <SocialIcon url="http://youtube.com/jaketrent" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <SocialIcon url="http://github.com/jaketrent" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <SocialIcon url="http://linkedin.com/jaketrent" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <SocialIcon url="https://twitter.com/tanveer88658551" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <SocialIcon url="https://www.youtube.com/channel/UCbHZWJiPHi1NzmzE3RvXBvg?view_as=subscriber" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <SocialIcon url="https://www.linkedin.com/in/tanveer3567" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <SocialIcon url="https://github.com/tanveer3567" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     </Col>
                     <Col className="text-justify">
                         <p>
@@ -28,9 +28,9 @@ function HomePage(props) {
                         <p>
                         I am highly skilled in designing, testing, and developing software and I have a thorough understanding of data structures and algorithms. I am knowledgeable of software development best practices and I have excellent work ethics. I enjoy solving difficult challenges and learning from them. Building, developing, deploying, and operating software products and services is something I am passionate about, which reflects my decision for applying here.
                         </p>
-                        <p>
-                            Interested roles:
-                            <p></p>
+                        <div>
+                            <p>Interested roles:</p>
+                            <br />
                             <ul>
                                 <li>
                                     Software Engineer
@@ -42,7 +42,7 @@ function HomePage(props) {
                                     Full-Stack Engineer
                                 </li>
                             </ul>
-                        </p>
+                        </div>
                     </Col>
                 </Row>
             </Container>
