@@ -31,7 +31,7 @@ class Carousel extends React.Component {
                     title: 'Object Detection',
                     subTitle: 'Object detection on non-iconic images using convolutional neural network.',
                     imgSrc: object_detection,
-                    link: '#',
+                    link: 'https://github.com/tanveer3567/Tutorials',
                     selected: false
                 },
                 {
@@ -39,7 +39,7 @@ class Carousel extends React.Component {
                     title: 'Max Connect 4',
                     subTitle: 'A board game to play.',
                     imgSrc: maxconnect4,
-                    link: '#',
+                    link: 'https://github.com/tanveer3567/maxconnect4',
                     selected: false
                 },
                 {
@@ -47,7 +47,7 @@ class Carousel extends React.Component {
                     title: 'Mac Maintenence System',
                     subTitle: 'A website form maintenence of Mavirck\'s Activity Center.',
                     imgSrc: mac_mnt_sys,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/tanveer3567/Mac_Maintenence_System',
                     selected: false
                 },
                 {
@@ -55,7 +55,7 @@ class Carousel extends React.Component {
                     title: 'Wumpus World',
                     subTitle: 'A scray game of man and a monster',
                     imgSrc: wumpus_world,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/tanveer3567/wumpus_world',
                     selected: false
                 },
                 {
@@ -63,7 +63,7 @@ class Carousel extends React.Component {
                     title: 'A star search',
                     subTitle: 'A website form maintenence of Mavirck\'s Activity Center.',
                     imgSrc: a_star_search,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/tanveer3567/A_star_search',
                     selected: false
                 },
             ]
@@ -99,7 +99,7 @@ class Carousel extends React.Component {
             var repo = "";
             if (item.selected) {
                 text = item.subTitle;
-                repo = "Repo"
+                repo = item.link
             } 
             return (
                 <Col className="p-4" key={item.id}>
@@ -108,7 +108,7 @@ class Carousel extends React.Component {
                         <Card.Body>
                             <Card.Title>{item.title}</Card.Title>
                             <Card.Text>{text}</Card.Text>
-                            <Button variant="link">{repo}</Button>
+                            <Button variant="link" href={repo}>Repo</Button>
                         </Card.Body>
                     </Card>
                 </Col>
