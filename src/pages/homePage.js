@@ -46,8 +46,7 @@ function HomePage(props) {
                 practices and I have excellent work ethics. I enjoy solving
                 difficult challenges and learning from them. Building,
                 developing, deploying, and operating software products and
-                services is something I am passionate about, which reflects my
-                decision for applying here.
+                services is something I am passionate about.
               </p>
               <p>Interested roles:</p>
             </Row>
